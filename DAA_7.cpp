@@ -43,7 +43,7 @@ int main()
     time_taken=(stop.tv_sec-start.tv_sec)*1e9;
     time_taken=(time_taken+(stop.tv_nsec-start.tv_nsec))*1e-9;
     for(int i=0;i<n;i++){
-        cout<<arr[i] )<<"\t";
+        cout<<arr[i]<<"\t";
     }
     cout<<"\n\nTime taken to sort the array is "<<fixed<<time_taken<<setprecision(9)<<" sec"<<endl;
     return 0;
