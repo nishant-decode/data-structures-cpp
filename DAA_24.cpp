@@ -7,6 +7,7 @@ struct weight{
     int b;
     int c;
 };
+
 struct vertices{
     int d;
     int u;
@@ -49,9 +50,9 @@ void dijkstra(int n,int **matrix,int s,struct vertices arr[],struct weight t[]){
         x++;
     }
     if(x!=n-1){
-        cout<<"\nNo Shortest path to all vertices"<<endl;
+    cout<<"\nNo Shortest path to all vertices"<<endl;
     }
-    cout<<"\nShortest path from the source vertex "<<s<<" to furthest vertex is: "<<mincost<<endl;
+    cout<<"\nShortest path  from the source vertex "<<s<<" to furthest vertex is: "<<mincost<<endl;
     cout<<"The edges present in shortest path are:\n";
     cout<<"\tWeight  Vertex  Parent\n";
     for(int i=0;i<x;i++){
